@@ -1,10 +1,10 @@
 import classNames from 'classnames/bind';
 
-import styles from './News.module.scss';
+import styles from './Product.module.scss';
 
 const cx = classNames.bind(styles);
 
-function News({ children }) {
+function Product({ children }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
@@ -14,4 +14,4 @@ function News({ children }) {
     );
 }
 
-export default News;
+export default Product;

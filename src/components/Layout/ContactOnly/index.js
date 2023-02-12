@@ -1,11 +1,9 @@
-import Header from '~/components/Layout/components/Header';
 import Contact from '~/components/Layout/components/Contact';
-import Title from '~/components/Layout/components/Title';
 
-function HeaderOnly({ children }) {
+function ContactOnly({ children }) {
     return (
         <div>
-            <Header />
+            <Contact />
             <div className="container">
                 <div className="content"> {children} </div>
             </div>
@@ -13,4 +11,4 @@ function HeaderOnly({ children }) {
     );
 }
 
-export default HeaderOnly;
+export default ContactOnly;

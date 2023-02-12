@@ -1,11 +1,13 @@
-import Header from '~/components/Layout/components/Header';
 import Contact from '~/components/Layout/components/Contact';
-import Title from '~/components/Layout/components/Title';
+import Header from '~/components/Layout/components/Header';
+import Banner from '~/components/Layout/components/Banner';
 
-function HeaderOnly({ children }) {
+function BannerOnly({ children }) {
     return (
         <div>
+            <Contact />
             <Header />
+            <Banner />
             <div className="container">
                 <div className="content"> {children} </div>
             </div>
@@ -13,4 +15,4 @@ function HeaderOnly({ children }) {
     );
 }
 
-export default HeaderOnly;
+export default BannerOnly;
