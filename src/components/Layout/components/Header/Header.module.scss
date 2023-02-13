@@ -1,4 +1,6 @@
 .wrapper {
+    --border-darius: 10px;
+
     width: 100%;
     height: var(--default-layout-header-height);
     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
@@ -9,4 +11,156 @@
 .inner {
     height: 100%;
     width: var(--default-layout-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+// Layout menu
+.navmenu {
+    display: flex;
+}
+
+// Button menu
+// .logo {
+
+// }
+
+.navmenu .navblock {
+    text-align: center;
+    display: block;
+}
+
+.navmenu .navblock .navtext {
+    line-height: 16px;
+    text-align: right;
+    padding: 15px 15px;
+}
+
+.navmenu .navblock a {
+    display: block;
+    text-transform: uppercase;
+    color: #151514;
+    position: relative;
+    font-weight: 500;
+}
+
+// button menu hover
+.icon {
+    color: rgba(22, 24, 35, 0.199);
+}
+.navmenu .navblock:hover {
+    background-color: rgba(22, 24, 35, 0.06);
+    transition: var(--default-transition);
+}
+
+.navmenu .navblock a:hover {
+    color: var(--hover);
+    transition: var(--default-transition);
+}
+
+li {
+    display: inline-block;
+    position: relative;
+}
+a {
+    display: block;
+    padding: 25px 80px;
+}
+li::before,
+li::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    position: absolute;
+    transition: var(--default-transition);
+    background: var(--hover);
+}
+
+a::before,
+a::after {
+    content: '';
+    width: 4px;
+    height: 0;
+    position: absolute;
+    transition: var(--default-transition);
+    background: var(--hover);
+}
+li:hover::before,
+li:hover::after {
+    width: var(--default-width-height);
+}
+li:hover a::before,
+li:hover a::after {
+    height: var(--default-width-height);
+}
+
+.navblock::after {
+    right: var(--default-top-bottom-left-right);
+    bottom: var(--default-top-bottom-left-right);
+    transition-duration: var(--default-transition-duration);
+}
+.navblock a::after {
+    right: var(--default-top-bottom-left-right);
+    bottom: var(--default-top-bottom-left-right);
+    transition-duration: var(--default-transition-duration);
+}
+.navblock::before {
+    left: var(--default-top-bottom-left-right);
+    top: var(--default-top-bottom-left-right);
+    transition-duration: var(--default-transition-duration);
+}
+.navblock a::before {
+    left: var(--default-top-bottom-left-right);
+    top: var(--default-top-bottom-left-right);
+    transition-duration: var(--default-transition-duration);
+}
+
+// =============================
+
+.search {
+    width: 250px;
+    height: var(--default-button-height);
+    padding-left: 16px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: var(--border-darius);
+    display: flex;
+    border: 2.5px solid transparent;
+
+    input {
+        width: 100%;
+        height: 100%;
+        color: var(--black);
+        font-size: 1.4rem;
+        background-color: transparent;
+        flex: 1;
+        caret-color: var(--hover);
+    }
+
+    &:focus-within {
+        border-color: var(--hover);
+    }
+}
+
+.clear {
+    height: 100%;
+    width: 25px;
+}
+
+.search-btn {
+    height: 100%;
+    width: 50px;
+    background-color: rgba(22, 24, 35, 0.199);
+    float: right;
+    border-top-right-radius: var(--border-darius);
+    border-bottom-right-radius: var(--border-darius);
+}
+
+.search-btn:hover {
+    background-color: var(--hover);
+    border-top-right-radius: var(--border-darius);
+    border-bottom-right-radius: var(--border-darius);
+    transition: all 0.2s linear;
+}
+
+// Responsive

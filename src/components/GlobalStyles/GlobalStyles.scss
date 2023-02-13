@@ -2,10 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 
 :root {
+    // Default-color
+    --black: #000;
+    --hover: #fa983a;
+
     // DefaultLayout
     --default-layout-header-height: 90px;
     --default-layout-width: 1150px;
     --default-layout-header-contact: 40px;
+
+    // Default-button:
+    --default-button-height: 46px;
+
+    // Default-input
+    --default-input-font-size: 1.6rem;
+
+    //Block-hover
+    --default-inline-block-hover: 50%;
+    --default-transition-duration: 0.4s;
+    --default-top-bottom-left-right: 0;
+    --default-width-height: 50%;
+    --default-transition: all 0.2s linear;
 }
 
 * {
@@ -23,4 +40,23 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+button,
+a:-webkit-any-link {
+    text-decoration: none;
+    cursor: pointer;
 }
