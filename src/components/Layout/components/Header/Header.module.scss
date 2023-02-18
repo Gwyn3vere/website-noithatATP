@@ -8,6 +8,12 @@
     display: flex;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+
 .inner {
     height: 100%;
     width: var(--default-layout-width);
@@ -22,9 +28,10 @@
 }
 
 // Button menu
-// .logo {
-
-// }
+.logo {
+    margin-top: 5px;
+    padding: 5px 0;
+}
 
 .navmenu .navblock {
     text-align: center;

@@ -1,5 +1,5 @@
 const images = {
-    hotline: require('~/assets/images/logo.svg'),
+    logo: require('~/assets/images/logo.svg').default,
 };
 
 export default images;
