@@ -1,5 +1,116 @@
 .wrapper {
     width: 100%;
-    height: 460px;
-    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    height: 760px;
+    position: relative;
+}
+
+.wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.title {
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 1000px;
+}
+
+.title h1 {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: var(--color-darkmode);
+    text-shadow: 2px 0 var(--primary), -2px 0 var(--primary), 0 2px var(--primary), 0 -2px var(--primary),
+        1px 1px var(--primary), -1px -1px var(--primary), 1px -1px var(--primary), -1px 1px var(--primary);
+    font-weight: bolder;
+    z-index: 1;
+}
+
+.wrapper .title {
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.text-index {
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: var(--color-darkmode);
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.content {
+    color: var(--color-darkmode);
+    letter-spacing: var(--default-letter-spacing);
+    text-align: center;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 500;
+}
+
+.content::after {
+    content: '';
+    width: 200px;
+    height: 3px;
+    background-color: var(--primary);
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.more {
+    margin-top: 20px;
+    width: 200px;
+    height: 47px;
+    background-color: transparent;
+    color: var(--color-darkmode);
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid var(--primary);
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.more .more-btn {
+    line-height: 16px;
+    text-align: center;
+    padding: 15px 15px;
+    display: block;
+    text-transform: uppercase;
+    color: var(--primary);
+    position: relative;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.more .more-btn:hover {
+    color: var(--color-darkmode);
+    box-shadow: inset 200px 0 0 0 var(--primary);
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
 }

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 const useSticky = () => {
     const stickyRef = useRef(null);
     const [sticky, setSticky] = useState(false);
+    const [stickyColor, setStickyColor] = useState(false);
     const [offset, setOffset] = useState(0);
 
     useEffect(() => {
@@ -19,11 +20,12 @@ const useSticky = () => {
             }
 
             setSticky(window.scrollY > offset);
+            setStickyColor(window.scrollY > offset + 680);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [setSticky, stickyRef, offset]);
-    return { stickyRef, sticky };
+    }, [setSticky, setStickyColor, stickyRef, offset]);
+    return { stickyRef, sticky, stickyColor };
 };
 
 export default useSticky;

@@ -10,9 +10,9 @@ import 'tippy.js/dist/tippy.css';
 const cx = classNames.bind(styles);
 
 function Header() {
-    const { sticky, stickyRef } = useSticky();
+    const { sticky, stickyRef, stickyColor } = useSticky();
     return (
-        <header ref={stickyRef} className={cx('wrapper', { sticky })}>
+        <header ref={stickyRef} className={cx('wrapper', { sticky, stickyColor })}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
                     <img src={images.logo} alt="atp" />
