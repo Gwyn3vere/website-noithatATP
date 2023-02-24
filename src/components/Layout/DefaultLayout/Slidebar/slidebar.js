@@ -11,7 +11,7 @@ const cx = classNames.bind(styles);
 function Slidebar() {
     const settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
