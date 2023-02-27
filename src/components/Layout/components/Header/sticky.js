@@ -20,7 +20,7 @@ const useSticky = () => {
             }
 
             setSticky(window.scrollY > offset);
-            setStickyColor(window.scrollY > offset + 680);
+            setStickyColor(window.scrollY > offset + 380);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);

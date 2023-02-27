@@ -1,12 +1,10 @@
 import Header from '~/components/Layout/components/Header';
-import Title from '~/components/Layout/components/Title';
-import Footer from '~/components/Layout/components/Footer';
+import Footer from '~/components/Layout/FooterOnly';
 
-function TitleOnly({ children }) {
+function FooterOnly({ children }) {
     return (
         <div>
             <Header />
-            <Title />
             <div className="container">
                 <div className="content"> {children} </div>
             </div>
@@ -15,4 +13,4 @@ function TitleOnly({ children }) {
     );
 }
 
-export default TitleOnly;
+export default FooterOnly;

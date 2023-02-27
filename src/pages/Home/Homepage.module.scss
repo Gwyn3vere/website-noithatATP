@@ -1,14 +1,18 @@
 .inner {
     --margin-top: 100px;
-
-    margin-top: 10px;
 }
 
 // content 1
-.introduction {
+.container1 {
     margin-top: var(--margin-top);
+    position: relative;
+    display: block;
+}
+
+.introduction {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 .introduction .name-company {
@@ -90,7 +94,7 @@
 .container2 .middle-img {
     object-fit: cover;
     display: block;
-    vertical-align: middle;
+    // vertical-align: middle;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -271,7 +275,7 @@
     display: flex;
 }
 .container4 .background1 {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     opacity: 0.6;
 }
@@ -297,10 +301,14 @@
 }
 
 .table-content .total {
-    width: 200px;
+    width: 150px;
     height: 100%;
     text-align: center;
     color: var(--color-darkmode);
+}
+
+.total .number {
+    display: flex;
 }
 
 .total h1 {
@@ -481,6 +489,7 @@
 // content 7
 .container7 {
     margin-top: var(--margin-top);
+    margin-bottom: var(--margin-top);
 }
 
 .container7 .library {
@@ -518,7 +527,7 @@
     transition: 0.3s ease-in-out;
 }
 
-figure {
+.animation figure {
     width: 300px;
     height: 300px;
     margin: 0;

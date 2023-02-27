@@ -1,6 +1,8 @@
-import styles from './Homepage.module.scss';
 import classNames from 'classnames/bind';
+
 import images from '~/assets/images';
+import NumberCounter from './number';
+import styles from './Homepage.module.scss';
 
 import { BsFillDropletFill, BsFillDoorOpenFill, BsFillGearFill, BsBriefcaseFill } from 'react-icons/bs';
 
@@ -127,20 +129,32 @@ function HomePage() {
                     <div className={cx('table')}>
                         <div className={cx('table-content')}>
                             <div className={cx('total')}>
-                                <h1>23</h1>
-                                <p>lorem</p>
+                                <h1 className={cx('number')}>
+                                    +
+                                    <NumberCounter number={27} />
+                                </h1>
+                                <p>Công trình</p>
                             </div>
                             <div className={cx('total')}>
-                                <h1>23</h1>
-                                <p>lorem</p>
+                                <h1 className={cx('number')}>
+                                    +
+                                    <NumberCounter number={300} />
+                                </h1>
+                                <p>Sản phẩm</p>
                             </div>
                             <div className={cx('total')}>
-                                <h1>23</h1>
-                                <p>lorem</p>
+                                <h1 className={cx('number')}>
+                                    +
+                                    <NumberCounter number={54} />
+                                </h1>
+                                <p>Mẫu mã</p>
                             </div>
                             <div className={cx('total')}>
-                                <h1>23</h1>
-                                <p>lorem</p>
+                                <h1 className={cx('number')}>
+                                    +
+                                    <NumberCounter number={100} />
+                                </h1>
+                                <p>Dự án</p>
                             </div>
                         </div>
                     </div>

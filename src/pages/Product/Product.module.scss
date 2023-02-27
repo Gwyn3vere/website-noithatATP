@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
+    background-color: #fff;
 }
 
 .container {
     width: var(--default-layout-width);
     min-height: 1000px;
-    background-color: antiquewhite;
 }

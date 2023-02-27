@@ -14,6 +14,7 @@ const images = {
     background3: require('~/assets/images/background3.jpg'),
     background4: require('~/assets/images/background4.jpg'),
     background5: require('~/assets/images/background5.jpg'),
+    background6: require('~/assets/images/background6.jpg'),
     lib1: require('~/assets/images/lib1.jpg'),
     lib2: require('~/assets/images/lib2.jpg'),
     lib3: require('~/assets/images/lib3.jpg'),

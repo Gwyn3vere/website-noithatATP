@@ -7,7 +7,9 @@ const cx = classNames.bind(styles);
 function Banner() {
     return (
         <header className={cx('wrapper')}>
-            <div className={cx('inner')}></div>
+            <div className={cx('inner')}>
+                <h2>Hello</h2>
+            </div>
         </header>
     );
 }
