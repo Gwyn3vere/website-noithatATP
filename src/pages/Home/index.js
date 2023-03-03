@@ -16,6 +16,9 @@ function HomePage() {
                 <section className={cx('container1')}>
                     <div className={cx('introduction')}>
                         <div className={cx('pre-intro')}>
+                            <img src={images.intro} alt="intro" />
+                        </div>
+                        <div className={cx('pre-intro')}>
                             <p className={cx('name-company')}>giới thiệu về an thượng phúc</p>
                             <p className={cx('describe')}>
                                 An Thượng Phúc là đơn vị chuyên thiết kế, thi công và lắp nặt nội thất nhà cửa chuyên
@@ -38,9 +41,6 @@ function HomePage() {
                                     xem thêm
                                 </a>
                             </div>
-                        </div>
-                        <div className={cx('pre-intro')}>
-                            <img src={images.intro} alt="intro" />
                         </div>
                     </div>
                 </section>

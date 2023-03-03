@@ -18,12 +18,12 @@ function Footer() {
                     <div className={cx('footer-left')}>
                         <div className={cx('logo')}>
                             <img src={images.logo} alt="logo" />
-                            <p>
+                            <p className={cx('logo-content1')}>
                                 An Thượng Phúc là trang web chuyên cung cấp những mẫu nội thất, các dịch vụ thiết kế và
                                 thi công lắp đặt nội thất cho các toà nhà, mẫu nhà đẹp, chung cư, văng phòng, biệt
                                 thự,...
                             </p>
-                            <p>
+                            <p className={cx('logo-content2')}>
                                 Sự uy tín và chất lượng tạo nên thương hiệu, An Thượng Phúc cùng với đội ngũ làm việc
                                 chuyên nghiệp sẽ mang đến cho khách hàng những công trình nội thất chất lượng nhất.
                                 Thường xuyên theo dõi fanpage cũng như trang web hoặc liên hệ chúng tôi để cập nhật

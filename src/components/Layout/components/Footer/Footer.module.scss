@@ -132,3 +132,114 @@ figure .background6 {
 .nocopyright p span {
     color: var(--primary);
 }
+
+// Responsive
+@media only screen and (max-width: 64.0625em) {
+    .wrapper {
+        .footer-box {
+            width: 100%;
+
+            .footer-left,
+            .footer-center,
+            .footer-right {
+                width: 370px;
+            }
+
+            .logo {
+                margin-top: 70px;
+                .logo-content2 {
+                    display: none;
+                }
+            }
+
+            .services h2 {
+                width: 250px;
+                margin: 0 auto;
+            }
+
+            .link-service {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 48.0625em) {
+    .wrapper {
+        figure {
+            height: 1100px;
+            .background6 {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .footer-box {
+            display: block;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .footer-left,
+            .footer-center,
+            .footer-right {
+                margin: 0 auto;
+                height: 350px;
+                width: 350px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            h2 {
+                padding: 20px 0;
+            }
+
+            .platform-service a {
+                padding: 10px 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 20.0625em) {
+    .wrapper {
+        figure {
+            height: 1300px;
+            .background6 {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .footer-box {
+            display: block;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .footer-left,
+            .footer-center,
+            .footer-right {
+                margin: 0 auto;
+                height: 400px;
+                width: 300px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            h2 {
+                padding: 20px 0;
+            }
+
+            .link-service a {
+                font-size: 13px;
+            }
+
+            .platform-service a {
+                padding: 10px 20px;
+            }
+        }
+    }
+}

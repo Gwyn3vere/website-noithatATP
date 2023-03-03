@@ -1,5 +1,4 @@
 import classNames from 'classnames/bind';
-import Dropdown from 'react-bootstrap/Dropdown';
 
 import styles from './Header.module.scss';
 import { BsSearch, BsJustify } from 'react-icons/bs';
@@ -21,7 +20,7 @@ function Header() {
                 </div>
                 <div className={cx('menu-btn')}>
                     <input type="checkbox" id="menu-active" className={cx('none')} />
-                    <label for="menu-active">
+                    <label htmlFor="menu-active">
                         <BsJustify className={cx('menu-ico')}></BsJustify>
                     </label>
                     <div className={cx('menu')}>
